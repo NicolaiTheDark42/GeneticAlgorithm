@@ -29,7 +29,7 @@ namespace GeneticAlgorithm_Phrase
 
             List<Individual> population = new List<Individual>(); // Guarda a População de Individuals
             int populationSize = 2000; // Define o tamanho da população
-            float mutatationRate = 0.001f; // Taxa de mutação
+            float mutationRate = 0.001f; // Taxa de mutação
             int generation = 0; // Geração atual
 
             int bestFitness = 0; // Melhor fitness até agora
@@ -70,7 +70,7 @@ namespace GeneticAlgorithm_Phrase
                     Individual[] parents = GetParents(population, rand);
 
                     // Cria um novo indivíduo
-                    newPopulation.Add(GenerateNewIndividual(parents, rand, mutatationRate));
+                    newPopulation.Add(GenerateNewIndividual(parents, rand, mutationRate));
                 }
 
                 // Substitui a velha população com a nova
