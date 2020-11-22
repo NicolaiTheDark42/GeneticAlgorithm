@@ -28,8 +28,8 @@ namespace GeneticAlgorithm_Phrase
             Random rand = new Random(); 
 
             List<Individual> population = new List<Individual>(); // Guarda a População de Individuals
-            int populationSize = 2000; // Define o tamanho da população
-            float mutationRate = 0.001f; // Taxa de mutação
+            int populationSize = 1500; // Define o tamanho da população
+            float mutationRate = 0.0025f; // Taxa de mutação
             int generation = 0; // Geração atual
 
             int bestFitness = 0; // Melhor fitness até agora
